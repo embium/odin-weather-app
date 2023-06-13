@@ -17,7 +17,7 @@ dataSubmit.addEventListener("submit", (e) => {
 });
 
 function getLocationData(location) {
-  let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}`;
+  let url = `//api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}`;
   fetch(url, { mode: "cors" })
     .then((response) => response.json())
     .then((data) => {
